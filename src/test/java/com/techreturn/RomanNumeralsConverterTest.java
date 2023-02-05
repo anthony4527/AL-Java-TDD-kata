@@ -18,6 +18,12 @@ public class RomanNumeralsConverterTest {
         RomanNumeralsConverter romanNumeralsConverter = new RomanNumeralsConverter();
         assertEquals("II", romanNumeralsConverter.convert(2));
     }
+    @Test
+    public void checkRomanNumeralforThree() {
+        RomanNumeralsConverter romanNumeralsConverter = new RomanNumeralsConverter();
+        assertEquals("III", romanNumeralsConverter.convert(3));
+    }
+
 }
 
 
