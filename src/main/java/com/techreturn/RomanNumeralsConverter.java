@@ -1,50 +1,36 @@
 package com.techreturn;
 
 public class RomanNumeralsConverter {
+
+    private final int THREE = 3;
+    private final int FOUR = 4;
+    private final int FIVE = 5;
+    private final String NumeralForOne = "I";
+    private final String NumeralForFive = "V";
+
     public String convert(int arabicNumber) {
         String numeral = "";
-        String numeralStartFive = "V";
+        String numeralStartFive = NumeralForFive;
 
-        if (arabicNumber <= 3) {
+        if (arabicNumber <= THREE) {
             for (int i=0; i< arabicNumber; i++) {
-                numeral += "I";
+                numeral += NumeralForOne;
             }
         } else {
-            if (arabicNumber == 4) {
-                numeral = "I" + numeralStartFive;
+            if (arabicNumber == FOUR) {
+                numeral = NumeralForOne + numeralStartFive;
             }
             else {
-                if (arabicNumber > 5) {
-                    for (int j=0; j < (arabicNumber -5) ; j++) {
+                if (arabicNumber > FIVE) {
+                    for (int j=0; j < (arabicNumber - FIVE) ; j++) {
                         // concat 'I' to right of V
-                        numeralStartFive += "I";
+                        numeralStartFive += NumeralForOne;
                     }
                 }
                 numeral = numeralStartFive;
             }
         }
 
-        /* refactor above
-        for (int i=0; i< arabicNumber; i++){
-            if (i < 3) {
-                numeral += "I";
-            } else {
-                if (i == 3) {
-                    numeral = "IV";
-                } else {
-                    if (i == 4) {
-                        numeral = numeralStartFive;
-                    } else {
-                        for (int j=0; j < i-4; j++) {
-                            // concat 'I' to right of V
-                            numeralStartFive += "I";
-                        }
-                        numeral = numeralStartFive;
-                    }
-                }
-
-            }
-        }*/
         return numeral;
     }
 
