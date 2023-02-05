@@ -17,37 +17,32 @@ public class RomanNumeralsConverter {
         String numeralStartFive = NumeralForFive;
         String numeralStartTen = NumeralForTen;
 
-        if (arabicNumber <= THREE) {
-            for (int i=0; i< arabicNumber; i++) {
-                numeral += NumeralForOne;
-            }
-        } else {
-            if (arabicNumber == FOUR) {
-                numeral = NumeralForOne + numeralStartFive;
-            }
-            else {
-                if (arabicNumber == FIVE) {
-                    numeral = NumeralForFive;
-                } else {
-                    if ((arabicNumber > FIVE) && (arabicNumber < NINE)) {
-                        for (int j=0; j < (arabicNumber - FIVE) ; j++) {
-                            // concat 'I' to right of V
-                            numeralStartFive += NumeralForOne;
-                        }
-                        numeral = numeralStartFive;
-                    } else {
-                        if ( arabicNumber == NINE) {
-                            numeral = NumeralForOne + NumeralForTen;
-                        } else {
-                            numeral = NumeralForTen;
-                        }
-                    }
+        switch (arabicNumber){
+            case 1,2,3:
+                for (int i=0; i< arabicNumber; i++) {
+                    numeral += NumeralForOne;
                 }
-
-
-            }
+                break;
+            case 4:
+                numeral =  NumeralForOne + NumeralForFive;
+                break;
+            case 5:
+                numeral = NumeralForFive;
+                break;
+            case 6,7,8:
+                for (int j=0; j < (arabicNumber - FIVE) ; j++) {
+                    // concat 'I' to right of V
+                    numeralStartFive += NumeralForOne;
+                }
+                numeral = numeralStartFive;
+                break;
+            case 9:
+                numeral = NumeralForOne + NumeralForTen;
+                break;
+            case 10:
+                numeral = NumeralForTen;
+                break;
         }
-
         return numeral;
     }
 
