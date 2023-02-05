@@ -24,6 +24,11 @@ public class RomanNumeralsConverterTest {
         assertEquals("III", romanNumeralsConverter.convert(3));
     }
 
+    @Test
+    public void checkRomanNumeralforFour() {
+        RomanNumeralsConverter romanNumeralsConverter = new RomanNumeralsConverter();
+        assertEquals("IV", romanNumeralsConverter.convert(4));
+    }
 }
 
 
