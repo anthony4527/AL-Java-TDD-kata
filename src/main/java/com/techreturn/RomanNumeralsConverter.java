@@ -9,10 +9,17 @@ public class RomanNumeralsConverter {
             } else {
                 if (i == 3) {
                     numeral = "IV";
-                } else
-                    numeral ="V";
+                } else {
+                    if (i == 4) {
+                        numeral ="V";
+                    } else {
+                        numeral = "V" + "I";
+                    }
+                }
+
             }
         }
         return numeral;
     }
+
 }

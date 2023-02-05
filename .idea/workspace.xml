@@ -107,6 +107,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RomanNumeralsConverterTest.checkRomanNumeralforSix" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RomanNumeral-tdd-kata" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.techreturn.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.techreturn" />
+      <option name="MAIN_CLASS_NAME" value="com.techreturn.RomanNumeralsConverterTest" />
+      <option name="METHOD_NAME" value="checkRomanNumeralforSix" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RomanNumeralsConverterTest.checkRomanNumeralforThree" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="RomanNumeral-tdd-kata" />
       <extension name="coverage">
@@ -123,29 +139,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RomanNumeralsConverterTest.checkRomanNumeralforTwo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="RomanNumeral-tdd-kata" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.techreturn.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.techreturn" />
-      <option name="MAIN_CLASS_NAME" value="com.techreturn.RomanNumeralsConverterTest" />
-      <option name="METHOD_NAME" value="checkRomanNumeralforTwo" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.RomanNumeralsConverterTest" />
+        <item itemvalue="JUnit.RomanNumeralsConverterTest.checkRomanNumeralforSix" />
         <item itemvalue="JUnit.RomanNumeralsConverterTest.checkRomanNumeralforFive" />
         <item itemvalue="JUnit.RomanNumeralsConverterTest.checkRomanNumeralforFour" />
         <item itemvalue="JUnit.RomanNumeralsConverterTest.checkRomanNumeralforThree" />
-        <item itemvalue="JUnit.RomanNumeralsConverterTest.checkRomanNumeralforTwo" />
       </list>
     </recent_temporary>
   </component>
