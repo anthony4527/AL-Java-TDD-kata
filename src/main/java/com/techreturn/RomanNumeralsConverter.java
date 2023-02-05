@@ -2,13 +2,8 @@ package com.techreturn;
 
 public class RomanNumeralsConverter {
 
-    private final int THREE = 3;
-    private final int FOUR = 4;
     private final int FIVE = 5;
-
-    private final int NINE = 9;
-    private final int TEN = 10;
-    private final String NumeralForOne = "I";
+     private final String NumeralForOne = "I";
     private final String NumeralForFive = "V";
 
     private final String NumeralForTen = "X";
@@ -45,6 +40,7 @@ public class RomanNumeralsConverter {
         }
         return numeral;
     }
+
 
 }
 
