@@ -7,7 +7,10 @@ public class RomanNumeralsConverter {
             if (i < 3) {
                 numeral += "I";
             } else {
-                numeral = "IV";
+                if (i == 3) {
+                    numeral = "IV";
+                } else
+                    numeral ="V";
             }
         }
         return numeral;

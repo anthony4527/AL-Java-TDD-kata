@@ -75,6 +75,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RomanNumeralsConverterTest.checkRomanNumeralforFive" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RomanNumeral-tdd-kata" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.techreturn.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.techreturn" />
+      <option name="MAIN_CLASS_NAME" value="com.techreturn.RomanNumeralsConverterTest" />
+      <option name="METHOD_NAME" value="checkRomanNumeralforFive" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RomanNumeralsConverterTest.checkRomanNumeralforFour" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="RomanNumeral-tdd-kata" />
       <extension name="coverage">
@@ -86,22 +102,6 @@
       <option name="PACKAGE_NAME" value="com.techreturn" />
       <option name="MAIN_CLASS_NAME" value="com.techreturn.RomanNumeralsConverterTest" />
       <option name="METHOD_NAME" value="checkRomanNumeralforFour" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RomanNumeralsConverterTest.checkRomanNumeralforOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="RomanNumeral-tdd-kata" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.techreturn.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.techreturn" />
-      <option name="MAIN_CLASS_NAME" value="com.techreturn.RomanNumeralsConverterTest" />
-      <option name="METHOD_NAME" value="checkRomanNumeralforOne" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -142,10 +142,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.RomanNumeralsConverterTest" />
+        <item itemvalue="JUnit.RomanNumeralsConverterTest.checkRomanNumeralforFive" />
         <item itemvalue="JUnit.RomanNumeralsConverterTest.checkRomanNumeralforFour" />
         <item itemvalue="JUnit.RomanNumeralsConverterTest.checkRomanNumeralforThree" />
         <item itemvalue="JUnit.RomanNumeralsConverterTest.checkRomanNumeralforTwo" />
-        <item itemvalue="JUnit.RomanNumeralsConverterTest.checkRomanNumeralforOne" />
       </list>
     </recent_temporary>
   </component>

@@ -29,6 +29,12 @@ public class RomanNumeralsConverterTest {
         RomanNumeralsConverter romanNumeralsConverter = new RomanNumeralsConverter();
         assertEquals("IV", romanNumeralsConverter.convert(4));
     }
+
+    @Test
+    public void checkRomanNumeralforFive() {
+        RomanNumeralsConverter romanNumeralsConverter = new RomanNumeralsConverter();
+        assertEquals("V", romanNumeralsConverter.convert(5));
+    }
 }
 
 
