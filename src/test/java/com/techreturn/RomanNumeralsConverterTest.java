@@ -53,6 +53,12 @@ public class RomanNumeralsConverterTest {
         RomanNumeralsConverter romanNumeralsConverter = new RomanNumeralsConverter();
         assertEquals("VIII", romanNumeralsConverter.convert(8));
     }
+
+    @Test
+    public void checkRomanNumeralforNine() {
+        RomanNumeralsConverter romanNumeralsConverter = new RomanNumeralsConverter();
+        assertEquals("IX", romanNumeralsConverter.convert(9));
+    }
 }
 
 
