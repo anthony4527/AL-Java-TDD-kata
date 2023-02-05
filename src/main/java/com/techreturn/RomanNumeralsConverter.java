@@ -38,6 +38,8 @@ public class RomanNumeralsConverter {
                     } else {
                         if ( arabicNumber == NINE) {
                             numeral = NumeralForOne + NumeralForTen;
+                        } else {
+                            numeral = NumeralForTen;
                         }
                     }
                 }
