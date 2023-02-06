@@ -70,6 +70,30 @@ public class RomanNumeralsConverterTest {
         RomanNumeralsConverter romanNumeralsConverter = new RomanNumeralsConverter();
         assertEquals("XI", romanNumeralsConverter.convert(11));
     }
+
+    @Test
+    public void checkRomanNumeralforFourteen() {
+        RomanNumeralsConverter romanNumeralsConverter = new RomanNumeralsConverter();
+        assertEquals("XIV", romanNumeralsConverter.convert(14));
+    }
+
+    @Test
+    public void checkRomanNumeralforNineteen() {
+        RomanNumeralsConverter romanNumeralsConverter = new RomanNumeralsConverter();
+        assertEquals("XIX", romanNumeralsConverter.convert(19));
+    }
+
+    @Test
+    public void checkRomanNumeralforTwentyMore() {
+        RomanNumeralsConverter romanNumeralsConverter = new RomanNumeralsConverter();
+        assertEquals("XXIV", romanNumeralsConverter.convert(24));
+    }
+
+    @Test
+    public void checkRomanNumeralforThirtyMore() {
+        RomanNumeralsConverter romanNumeralsConverter = new RomanNumeralsConverter();
+        assertEquals("XXXVI", romanNumeralsConverter.convert(36));
+    }
 }
 
 

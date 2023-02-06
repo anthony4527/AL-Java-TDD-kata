@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2fa5f78e-e482-4409-b0e5-5dfd0fdefd02" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/techreturn/RomanNumeralsConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/techreturn/RomanNumeralsConverter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/techreturn/RomanNumeralsConverterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/techreturn/RomanNumeralsConverterTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,7 +55,7 @@
       <recent name="C:\Users\Anthony Lee\IdeaProjects\RomanNumeral-tdd-kata" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RomanNumeralsConverterTest.checkRomanNumeralforTwo">
+  <component name="RunManager" selected="JUnit.RomanNumeralsConverterTest">
     <configuration name="RomanNumeralsConverterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="RomanNumeral-tdd-kata" />
       <extension name="coverage">
@@ -73,7 +71,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RomanNumeralsConverterTest.checkRomanNumeralforEleven" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RomanNumeralsConverterTest.checkRomanNumeralforFourteen" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="RomanNumeral-tdd-kata" />
       <extension name="coverage">
         <pattern>
@@ -83,13 +81,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.techreturn" />
       <option name="MAIN_CLASS_NAME" value="com.techreturn.RomanNumeralsConverterTest" />
-      <option name="METHOD_NAME" value="checkRomanNumeralforEleven" />
+      <option name="METHOD_NAME" value="checkRomanNumeralforFourteen" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RomanNumeralsConverterTest.checkRomanNumeralforOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RomanNumeralsConverterTest.checkRomanNumeralforNineteen" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="RomanNumeral-tdd-kata" />
       <extension name="coverage">
         <pattern>
@@ -99,13 +97,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.techreturn" />
       <option name="MAIN_CLASS_NAME" value="com.techreturn.RomanNumeralsConverterTest" />
-      <option name="METHOD_NAME" value="checkRomanNumeralforOne" />
+      <option name="METHOD_NAME" value="checkRomanNumeralforNineteen" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RomanNumeralsConverterTest.checkRomanNumeralforTen" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RomanNumeralsConverterTest.checkRomanNumeralforThirtyMore" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="RomanNumeral-tdd-kata" />
       <extension name="coverage">
         <pattern>
@@ -115,13 +113,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.techreturn" />
       <option name="MAIN_CLASS_NAME" value="com.techreturn.RomanNumeralsConverterTest" />
-      <option name="METHOD_NAME" value="checkRomanNumeralforTen" />
+      <option name="METHOD_NAME" value="checkRomanNumeralforThirtyMore" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RomanNumeralsConverterTest.checkRomanNumeralforTwo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RomanNumeralsConverterTest.checkRomanNumeralforTwentyMore" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="RomanNumeral-tdd-kata" />
       <extension name="coverage">
         <pattern>
@@ -131,7 +129,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.techreturn" />
       <option name="MAIN_CLASS_NAME" value="com.techreturn.RomanNumeralsConverterTest" />
-      <option name="METHOD_NAME" value="checkRomanNumeralforTwo" />
+      <option name="METHOD_NAME" value="checkRomanNumeralforTwentyMore" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -139,11 +137,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.RomanNumeralsConverterTest.checkRomanNumeralforTwo" />
-        <item itemvalue="JUnit.RomanNumeralsConverterTest.checkRomanNumeralforOne" />
         <item itemvalue="JUnit.RomanNumeralsConverterTest" />
-        <item itemvalue="JUnit.RomanNumeralsConverterTest.checkRomanNumeralforEleven" />
-        <item itemvalue="JUnit.RomanNumeralsConverterTest.checkRomanNumeralforTen" />
+        <item itemvalue="JUnit.RomanNumeralsConverterTest.checkRomanNumeralforThirtyMore" />
+        <item itemvalue="JUnit.RomanNumeralsConverterTest.checkRomanNumeralforTwentyMore" />
+        <item itemvalue="JUnit.RomanNumeralsConverterTest.checkRomanNumeralforNineteen" />
+        <item itemvalue="JUnit.RomanNumeralsConverterTest.checkRomanNumeralforFourteen" />
       </list>
     </recent_temporary>
   </component>
