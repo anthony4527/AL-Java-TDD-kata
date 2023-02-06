@@ -110,6 +110,16 @@ public class RomanNumeralsConverterTest {
         RomanNumeralsConverter romanNumeralsConverter = new RomanNumeralsConverter();
         assertEquals("L", romanNumeralsConverter.convert(50));
     }
+    @Test
+    public void checkRomanNumeralforFiftyMore() {
+        RomanNumeralsConverter romanNumeralsConverter = new RomanNumeralsConverter();
+        assertEquals("LVIII", romanNumeralsConverter.convert(58));
+    }
+    @Test
+    public void checkRomanNumeralforSeventyMore() {
+        RomanNumeralsConverter romanNumeralsConverter = new RomanNumeralsConverter();
+        assertEquals("LXXIII", romanNumeralsConverter.convert(73));
+    }
 }
 
 

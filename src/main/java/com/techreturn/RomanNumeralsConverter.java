@@ -66,7 +66,15 @@ public class RomanNumeralsConverter {
             if (tenMultiplier == FOUR)
                 numeral += NumeralForTen + NumeralForFifty;
             else
-                numeral += NumeralForFifty;
+                if (tenMultiplier == FIVE)
+                    numeral += NumeralForFifty;
+                else {
+                    numeral += NumeralForFifty;
+                    for (int i=0; i< (tenMultiplier - FIVE); i++) {
+                        numeral += NumeralForTen;
+                    }
+                }
+
         }
 
         //appendix last numeral for 1 to 9 to ten multiplier            //numeral = 'X' + first digit in roman numeral
