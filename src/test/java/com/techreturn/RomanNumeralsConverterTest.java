@@ -120,6 +120,11 @@ public class RomanNumeralsConverterTest {
         RomanNumeralsConverter romanNumeralsConverter = new RomanNumeralsConverter();
         assertEquals("LXXIII", romanNumeralsConverter.convert(73));
     }
+    @Test
+    public void checkRomanNumeralforNintyMore() {
+        RomanNumeralsConverter romanNumeralsConverter = new RomanNumeralsConverter();
+        assertEquals("XCIX", romanNumeralsConverter.convert(99));
+    }
 }
 
 

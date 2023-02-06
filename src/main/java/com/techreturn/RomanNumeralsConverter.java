@@ -9,7 +9,7 @@ public class RomanNumeralsConverter {
 
     private final String NumeralForTen = "X";
     private final String NumeralForFifty = "L";
-
+    private final String NumeralForHundred = "C";
     private String convertOnetoNine(int leastSigDigit) {
 
         String numeralStartFive = NumeralForFive;
@@ -69,12 +69,17 @@ public class RomanNumeralsConverter {
                 if (tenMultiplier == FIVE)
                     numeral += NumeralForFifty;
                 else {
-                    numeral += NumeralForFifty;
-                    for (int i=0; i< (tenMultiplier - FIVE); i++) {
-                        numeral += NumeralForTen;
+                    if (tenMultiplier < 9) {
+                        numeral += NumeralForFifty;
+                        for (int i=0; i< (tenMultiplier - FIVE); i++) {
+                            numeral += NumeralForTen;
+                        }
                     }
-                }
+                    else {
+                        numeral += NumeralForTen + NumeralForHundred;
+                    }
 
+                }
         }
 
         //appendix last numeral for 1 to 9 to ten multiplier            //numeral = 'X' + first digit in roman numeral
