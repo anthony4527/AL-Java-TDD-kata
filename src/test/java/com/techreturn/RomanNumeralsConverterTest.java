@@ -64,6 +64,12 @@ public class RomanNumeralsConverterTest {
         RomanNumeralsConverter romanNumeralsConverter = new RomanNumeralsConverter();
         assertEquals("X", romanNumeralsConverter.convert(10));
     }
+
+    @Test
+    public void checkRomanNumeralforEleven() {
+        RomanNumeralsConverter romanNumeralsConverter = new RomanNumeralsConverter();
+        assertEquals("XI", romanNumeralsConverter.convert(11));
+    }
 }
 
 
