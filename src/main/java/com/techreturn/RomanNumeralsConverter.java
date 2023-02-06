@@ -2,12 +2,13 @@ package com.techreturn;
 
 public class RomanNumeralsConverter {
 
+    private final int FOUR = 4;
     private final int FIVE = 5;
      private final String NumeralForOne = "I";
     private final String NumeralForFive = "V";
 
     private final String NumeralForTen = "X";
-    private final String NumeralForForty = "XL";
+    private final String NumeralForFifty = "L";
 
     private String convertOnetoNine(int leastSigDigit) {
 
@@ -62,7 +63,10 @@ public class RomanNumeralsConverter {
                 numeral += NumeralForTen;
             }
         } else {
-            numeral += NumeralForForty;
+            if (tenMultiplier == FOUR)
+                numeral += NumeralForTen + NumeralForFifty;
+            else
+                numeral += NumeralForFifty;
         }
 
         //appendix last numeral for 1 to 9 to ten multiplier            //numeral = 'X' + first digit in roman numeral

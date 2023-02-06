@@ -105,6 +105,11 @@ public class RomanNumeralsConverterTest {
         RomanNumeralsConverter romanNumeralsConverter = new RomanNumeralsConverter();
         assertEquals("XLIV", romanNumeralsConverter.convert(44));
     }
+    @Test
+    public void checkRomanNumeralforFifty() {
+        RomanNumeralsConverter romanNumeralsConverter = new RomanNumeralsConverter();
+        assertEquals("L", romanNumeralsConverter.convert(50));
+    }
 }
 
 
