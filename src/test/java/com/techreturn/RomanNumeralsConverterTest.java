@@ -94,6 +94,17 @@ public class RomanNumeralsConverterTest {
         RomanNumeralsConverter romanNumeralsConverter = new RomanNumeralsConverter();
         assertEquals("XXXVI", romanNumeralsConverter.convert(36));
     }
+
+    @Test
+    public void checkRomanNumeralforFortyMore() {
+        RomanNumeralsConverter romanNumeralsConverter = new RomanNumeralsConverter();
+        assertEquals("XLI", romanNumeralsConverter.convert(41));
+    }
+    @Test
+    public void checkRomanNumeralforFortyFour() {
+        RomanNumeralsConverter romanNumeralsConverter = new RomanNumeralsConverter();
+        assertEquals("XLIV", romanNumeralsConverter.convert(44));
+    }
 }
 
 

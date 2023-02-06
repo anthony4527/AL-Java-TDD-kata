@@ -7,6 +7,7 @@ public class RomanNumeralsConverter {
     private final String NumeralForFive = "V";
 
     private final String NumeralForTen = "X";
+    private final String NumeralForForty = "XL";
 
     private String convertOnetoNine(int leastSigDigit) {
 
@@ -36,9 +37,9 @@ public class RomanNumeralsConverter {
             case 9:
                 leastNumeral = NumeralForOne + NumeralForTen;
                 break;
-            case 10:
-                leastNumeral = NumeralForTen;
-                break;
+//            case 10:
+//                leastNumeral = NumeralForTen;
+//                break;
         }
         return leastNumeral;
     }
@@ -56,9 +57,14 @@ public class RomanNumeralsConverter {
         } else
             firstDigit = arabicNumber;
 
-        for (int i =0; i<tenMultiplier; i++) {
-            numeral += NumeralForTen;
+        if (tenMultiplier < 4) {
+            for (int i =0; i<tenMultiplier; i++) {
+                numeral += NumeralForTen;
+            }
+        } else {
+            numeral += NumeralForForty;
         }
+
         //appendix last numeral for 1 to 9 to ten multiplier            //numeral = 'X' + first digit in roman numeral
         if (firstDigit > 0)
             numeral += convertOnetoNine(firstDigit);
