@@ -143,6 +143,22 @@ public class RomanNumeralsConverterTest {
         RomanNumeralsConverter romanNumeralsConverter = new RomanNumeralsConverter();
         assertEquals("MMXLVI", romanNumeralsConverter.convert(2046));
     }
+
+    @Test
+    public void checkRomanNumeralforThreeThousand() {
+        RomanNumeralsConverter romanNumeralsConverter = new RomanNumeralsConverter();
+        assertEquals("MMM", romanNumeralsConverter.convert(3000));
+    }
+    @Test
+    public void checkRomanNumeralforGtThreeThousand() {
+        RomanNumeralsConverter romanNumeralsConverter = new RomanNumeralsConverter();
+        assertEquals("Not available for greater than 3000", romanNumeralsConverter.convert(3001));
+    }
+    @Test
+    public void checkRomanNumeralforVeryLarge() {
+        RomanNumeralsConverter romanNumeralsConverter = new RomanNumeralsConverter();
+        assertEquals("Not available for greater than 3000", romanNumeralsConverter.convert(13401));
+    }
 }
 
 

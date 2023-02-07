@@ -8,6 +8,7 @@ public class RomanNumeralsConverter {
     //The 2D array has four row, keeping symbols for each digit, up to the max 4 (thousand) digit
     //'?' used on the 4th line as the five and ten sumbols for the 4th digit not supported
     private final String[][] SymbolsOneFiveTen = {{"I","V", "X"}, {"X", "L", "C"}, {"C","D", "M"}, {"M", "?", "?"} };
+    public final int MaxRomanToUse = 3000;
 
     private String convertOnetoNine(int oneDigit, int digitPosition) {
 
@@ -57,7 +58,7 @@ public class RomanNumeralsConverter {
         int[] arabicNum = new int[inputNumber.length()];
 
         //the function does not support number larger than 3000
-        if (arabicNumber >3000) {
+        if (arabicNumber > MaxRomanToUse) {
             return "Not available for greater than 3000";
         }
         for (int i=0; i<inputNumber.length(); i++ ){
