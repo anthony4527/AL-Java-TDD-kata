@@ -125,6 +125,18 @@ public class RomanNumeralsConverterTest {
         RomanNumeralsConverter romanNumeralsConverter = new RomanNumeralsConverter();
         assertEquals("XCIX", romanNumeralsConverter.convert(99));
     }
+
+    @Test
+    public void checkRomanNumeralforThreeDigits() {
+        RomanNumeralsConverter romanNumeralsConverter = new RomanNumeralsConverter();
+        assertEquals("CCCLXXVIII", romanNumeralsConverter.convert(378));
+    }
+
+    @Test
+    public void checkRomanNumeralforFourDigits() {
+        RomanNumeralsConverter romanNumeralsConverter = new RomanNumeralsConverter();
+        assertEquals("MM", romanNumeralsConverter.convert(2000));
+    }
 }
 
 
