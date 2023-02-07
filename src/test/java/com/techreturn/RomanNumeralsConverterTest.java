@@ -137,6 +137,12 @@ public class RomanNumeralsConverterTest {
         RomanNumeralsConverter romanNumeralsConverter = new RomanNumeralsConverter();
         assertEquals("MM", romanNumeralsConverter.convert(2000));
     }
+
+    @Test
+    public void checkRomanNumeralforGtTwoThousand() {
+        RomanNumeralsConverter romanNumeralsConverter = new RomanNumeralsConverter();
+        assertEquals("MMXLVI", romanNumeralsConverter.convert(2046));
+    }
 }
 
 
