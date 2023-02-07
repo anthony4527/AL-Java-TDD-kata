@@ -10,7 +10,7 @@ public class RomanNumeralsConverter {
     private final String[][] SymbolsOneFiveTen = {{"I","V", "X"}, {"X", "L", "C"}, {"C","D", "M"}, {"M", "?", "?"} };
     public final int MaxRomanToUse = 3000;
 
-    private String convertOnetoNine(int oneDigit, int digitPosition) {
+    private String convertZerotoNine(int oneDigit, int digitPosition) {
 
         String numeralForDigit = "";
 
@@ -52,15 +52,16 @@ public class RomanNumeralsConverter {
     public String convert(int arabicNumber) {
         String numeralResult = "";
 
+        //the function does not support number larger than 3000
+        if (arabicNumber > MaxRomanToUse) {
+            return "Not available for greater than 3000";
+        }
+
         // get each digit from most significant, and change it to roman numeral using convertOneNine method
         // make input number become int array for each digit
         String inputNumber = Integer.toString(arabicNumber);
         int[] arabicNum = new int[inputNumber.length()];
 
-        //the function does not support number larger than 3000
-        if (arabicNumber > MaxRomanToUse) {
-            return "Not available for greater than 3000";
-        }
         for (int i=0; i<inputNumber.length(); i++ ){
             arabicNum[i] = Character.getNumericValue(inputNumber.charAt(i));
         }
@@ -68,9 +69,9 @@ public class RomanNumeralsConverter {
         // use for loop start to work on each digit
         for (int j=0; j<inputNumber.length(); j++ ) {
             int position = inputNumber.length() - j;    // position 1 means last digit, 2 mean tenth's position, '3' for hundredth's ...
-            //call convertOnetoNine pass the digit and the digit position
+            //call convertZerotoNine pass the digit and the digit position
             // add numeral of converted digit to numeral result
-            numeralResult += convertOnetoNine(arabicNum[j], position);
+            numeralResult += convertZerotoNine(arabicNum[j], position);
         }
 
         return numeralResult;
